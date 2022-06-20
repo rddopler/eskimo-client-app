@@ -12,6 +12,7 @@ import { ReservationComponent } from './components/reservation/reservation.compo
 import { ContactComponent } from './components/contact/contact.component';
 import { ALaCarteMenuComponent } from './components/menu/a-la-carte-menu/a-la-carte-menu.component';
 import { DessertsComponent } from './components/menu/desserts/desserts.component';
+import { PrivateDiningComponent } from './components/private-dining/private-dining.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DessertsComponent } from './components/menu/desserts/desserts.component
     ReservationComponent,
     ContactComponent,
     ALaCarteMenuComponent,
-    DessertsComponent
+    DessertsComponent,
+    PrivateDiningComponent
   ],
   imports: [
     BrowserModule,
