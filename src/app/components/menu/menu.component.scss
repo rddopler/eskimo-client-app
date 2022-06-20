@@ -1,6 +1,6 @@
 video {
   width: 100%;
-  height: 350px;
+  height: 100px;
   object-fit: cover;
 }
 
@@ -22,7 +22,7 @@ video {
 
   h2 {
     font-size: 2.5vw;
-    padding: 40px;
+    padding-top: 3vw;
     font-family: calluna;
   }
 
@@ -37,7 +37,7 @@ video {
 .all-menus {
   padding-left: 275px;
   padding-right: 275px;
-  padding-top: 50px;
+  padding-top: 30px;
   color: white;
 
   .class {
