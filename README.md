@@ -1,6 +1,6 @@
 # EskimoClientApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+This project was updated to [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
 ## Development server
 
