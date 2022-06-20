@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ALaCarteMenuComponent } from './components/menu/a-la-carte-menu/a-la-carte-menu.component';
 import { DessertsComponent } from './components/menu/desserts/desserts.component';
 import { PrivateDiningComponent } from './components/private-dining/private-dining.component';
+import { PageNotFoundComponent } from './components/common/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PrivateDiningComponent } from './components/private-dining/private-dini
     ContactComponent,
     ALaCarteMenuComponent,
     DessertsComponent,
-    PrivateDiningComponent
+    PrivateDiningComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import {BrooklynComponent} from "./components/home/location/brooklyn/brooklyn.co
 import {MenuComponent} from "./components/menu/menu.component";
 import {ReservationComponent} from "./components/reservation/reservation.component";
 import {PrivateDiningComponent} from "./components/private-dining/private-dining.component";
+import {ContactComponent} from "./components/contact/contact.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'brooklyn', component: BrooklynComponent },
   { path: 'menus', component: MenuComponent },
   { path: 'reservation', component: ReservationComponent },
-  { path: 'private-dining', component: PrivateDiningComponent }
+  { path: 'private-dining', component: PrivateDiningComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
