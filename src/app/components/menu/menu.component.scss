@@ -1,0 +1,46 @@
+video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.menu-options {
+  text-align: center;
+  color: white;
+
+  hr {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 55px;
+  }
+
+  h1 {
+    font-size: 5vw;
+    padding: 40px;
+    font-family: calluna;
+  }
+
+  h2 {
+    font-size: 2.5vw;
+    padding: 40px;
+    font-family: calluna;
+  }
+
+  button {
+    width: 14.9vw;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: calluna;
+  }
+}
+
+.all-menus {
+  padding-left: 275px;
+  padding-right: 275px;
+  padding-top: 50px;
+  color: white;
+
+  .class {
+    display: flex;
+  }
+}

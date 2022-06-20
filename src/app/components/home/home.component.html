@@ -1,0 +1,18 @@
+<div class="home">
+  <div class="locations">
+    <div class="header">
+      NEBULA
+    </div>
+    <div *ngIf="!showBrooklynAddress && !showManhattanAddress">
+    <p>4698 5th Ave - New York, NY </p>
+    </div>
+    <div *ngIf="showBrooklynAddress">
+      <p>4698 5th Ave - New York, NY </p>
+    </div>
+    <div *ngIf="showManhattanAddress">
+      <p>215 4th St - Brooklyn, NY </p>
+    </div>
+    <a routerLink="/manhattan" routerLinkActive="active" (mouseover)="changeToBrooklynAddress()" (mouseleave)="showBrooklynAddress = false">MANHATTAN</a>
+    <a routerLink="/brooklyn" routerLinkActive="active" (mouseover)="changeToManhattanAddress()" (mouseleave)="showManhattanAddress = false">BROOKLYN</a>
+  </div>
+</div>
