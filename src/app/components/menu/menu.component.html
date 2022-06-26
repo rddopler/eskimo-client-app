@@ -1,30 +1,48 @@
 <ng-container>
   <app-header></app-header>
   <div class="menu-options">
-    <div *ngIf="isAlaCarte || (!isCocktails && !isDessert && !isAlaCarte)">
+    <div *ngIf="isChefsTasting || (!isWine && !isDessert && !isDinner)">
     <video [muted]="true" autoplay loop>
-      <source src="../../../assets/food.mp4" type="video/mp4">
+      <source src="../../../assets/5star.mp4" type="video/mp4">
     </video>
+    </div>
+    <div *ngIf="isDinner">
+      <video [muted]="true" autoplay loop>
+        <source src="../../../assets/food.mp4" type="video/mp4">
+      </video>
     </div>
     <div *ngIf="isDessert">
       <video [muted]="true" autoplay loop>
         <source src="../../../assets/chocolate.mp4" type="video/mp4">
       </video>
     </div>
-    <div *ngIf="isCocktails">
+    <div *ngIf="isWine">
       <video [muted]="true" autoplay loop>
         <source src="../../../assets/cocktails4.mp4" type="video/mp4">
       </video>
     </div>
     <h1>MENUS</h1>
-    <button type="button" class="btn btn-outline-light" (click)="onAlaCarte()">A LA CARTE</button>
-    <button type="button" class="btn btn-outline-light" (click)="onDesserts()">DESSERTS</button>
-    <button type="button" class="btn btn-outline-light" (click)="onCocktails()">COCKTAILS</button>
+    <button type="button" class="btn btn-outline-light" (click)="onChefsTasting()">CHEF'S TASTING</button>
+    <button type="button" class="btn btn-outline-light" (click)="onDinner()">DINNER</button>
+    <button type="button" class="btn btn-outline-light" (click)="onDessert()">DESSERT</button>
+    <button type="button" class="btn btn-outline-light" (click)="onWine()">WINE</button>
     <hr>
     <h2>{{menuTitle}}</h2>
     <img src="../../../assets/trident2.png" alt="Trident" width="40" height="50">
   </div>
   <div class="all-menus">
-    <a-la-carte-menu></a-la-carte-menu>
+    <div *ngIf="isChefsTasting || (!isWine && !isDessert && !isDinner)">
+      <tasting></tasting>
+    </div>
+    <div *ngIf="isDinner">
+      <dinner></dinner>
+    </div>
+    <div *ngIf="isDessert">
+      <desserts></desserts>
+    </div>
+    <div *ngIf="isWine">
+      <wine></wine>
+    </div>
   </div>
+  <footer></footer>
 </ng-container>
