@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  isAlaCarte = false;
+  isChefsTasting = false;
+  isDinner = false;
   isDessert = false;
-  isCocktails = false;
+  isWine = false;
 
   public menuTitle: any;
   constructor() { }
@@ -18,27 +19,38 @@ export class MenuComponent implements OnInit {
   }
 
   loadContent() {
-    this.menuTitle = 'A LA CARTE';
+    this.menuTitle = 'CHEF\'S TASTING';
   }
 
-  onAlaCarte() {
-    this.isAlaCarte = true;
+  onChefsTasting() {
+    this.isChefsTasting = true;
+    this.isDinner = false;
+    this.isWine = false;
     this.isDessert = false;
-    this.isCocktails = false;
-    this.menuTitle = 'A LA CARTE';
+    this.menuTitle = 'CHEF\'S TASTING';
   }
 
-  onDesserts() {
+  onDinner() {
+    this.isDinner = true;
+    this.isChefsTasting = false;
+    this.isWine = false;
+    this.isDessert = false;
+    this.menuTitle = 'DINNER';
+  }
+
+  onDessert() {
     this.isDessert = true;
-    this.isAlaCarte = false;
-    this.isCocktails = false;
-    this.menuTitle = 'DESSERTS';
+    this.isChefsTasting = false;
+    this.isWine = false;
+    this.isDinner = false;
+    this.menuTitle = 'DESSERT';
   }
 
-  onCocktails() {
-    this.isCocktails = true;
-    this.isAlaCarte = false;
+  onWine() {
+    this.isWine = true;
+    this.isChefsTasting = false;
+    this.isDinner = false;
     this.isDessert = false;
-    this.menuTitle = 'COCKTAILS';
+    this.menuTitle = 'WINE';
   }
 }

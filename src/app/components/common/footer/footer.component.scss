@@ -1,0 +1,42 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 45px;
+  color: white;
+  background: transparent;
+  font-family: calluna;
+}
+
+svg {
+  margin: 10px;
+}
+
+a {
+  margin: 0px 10px 0px 0px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media {
+  padding-left: 25px;
+}
+
+.footer-links {
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background: transparent;
+  font-family: calluna;
+  font-size: 12px;
+  padding-right: 25px;
+  justify-content: right;
+  display: flex;
+
+  p {
+    padding-right: 10px;
+  }
+}

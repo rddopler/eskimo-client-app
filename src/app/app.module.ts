@@ -10,10 +10,13 @@ import { BrooklynComponent } from './components/home/location/brooklyn/brooklyn.
 import { MenuComponent } from './components/menu/menu.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ALaCarteMenuComponent } from './components/menu/a-la-carte-menu/a-la-carte-menu.component';
 import { DessertsComponent } from './components/menu/desserts/desserts.component';
 import { PrivateDiningComponent } from './components/private-dining/private-dining.component';
 import { PageNotFoundComponent } from './components/common/page-not-found/page-not-found.component';
+import { DinnerComponent } from './components/menu/dinner/dinner.component';
+import { TastingComponent } from './components/menu/tasting/tasting.component';
+import { WineComponent } from './components/menu/wine/wine.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +29,13 @@ import { PageNotFoundComponent } from './components/common/page-not-found/page-n
     MenuComponent,
     ReservationComponent,
     ContactComponent,
-    ALaCarteMenuComponent,
     DessertsComponent,
     PrivateDiningComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DinnerComponent,
+    TastingComponent,
+    WineComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
